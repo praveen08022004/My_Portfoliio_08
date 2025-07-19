@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My LinkedIn Projects</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #4895ef;
+            --secondary-color: #4361ee;
+            --accent-color: #3f37c9;
+            --text-color: #f8f9fa;
+            --text-light: #adb5bd;
+            --bg-color: #121212;
+            --card-bg: #1e1e1e;
+            --border-color: #333333;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            --nav-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            --glass-bg: rgba(30, 30, 30, 0.8);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: var(--card-bg);
+            padding: 20px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .profile-header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .profile-pic {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--primary-color);
+        }
+
+        .profile-info h1 {
+            margin: 0;
+            color: var(--text-color);
+            font-size: 1.8rem;
+        }
+
+        .profile-info p {
+            margin: 5px 0 0;
+            color: var(--text-light);
+        }
+
+        .linkedin-nav {
+            display: flex;
+            margin-top: 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .nav-item {
+            padding: 15px 20px;
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 2px solid transparent;
+        }
+
+        .nav-item.active {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+        }
+
+        .projects-section {
+            margin-top: 30px;
+        }
+
+        .empty-state {
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            padding: 40px;
+            text-align: center;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow);
+        }
+
+        .empty-icon {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        .empty-state h2 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        .empty-state p {
+            color: var(--text-light);
+            max-width: 600px;
+            margin: 0 auto 25px;
+        }
+
+        .linkedin-btn {
+            background-color: #0a66c2;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 24px;
+            font-weight: 600;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .linkedin-btn:hover {
+            background-color: #004182;
+            transform: translateY(-2px);
+        }
+
+        .btn-icon {
+            font-size: 1.1rem;
+        }
+
+        .timeline {
+            margin-top: 30px;
+            color: var(--text-light);
+            font-style: italic;
+            text-align: center;
+        }
+
+        footer {
+            margin-top: 50px;
+            padding: 20px 0;
+            text-align: center;
+            color: var(--text-light);
+            border-top: 1px solid var(--border-color);
+        }
+
+        @media (max-width: 768px) {
+            .profile-header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .linkedin-nav {
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+            
+            .empty-state {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="profile-header">
+                <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+                <div class="profile-info">
+                    <h1>A S Praveen Kumar</h1>
+                    <p>Web Developer</p>
+                </div>
+            </div>
+            
+            <div class="linkedin-nav">
+                <a href="#" class="nav-item">About</a>
+                <a href="#" class="nav-item">Experience</a>
+                <a href="#" class="nav-item">Education</a>
+                <a href="#" class="nav-item active">Projects</a>
+                <a href="#" class="nav-item">Skills</a>
+            </div>
+        </header>
+        
+        <main>
+            <section class="projects-section">
+                <div class="empty-state">
+                    <div class="empty-icon">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <h2>Projects Coming Soon</h2>
+                    <p>I haven't added my projects to LinkedIn yet, but I'll be showcasing my work here very soon. Check back later to see my portfolio of professional projects and contributions!</p>
+                    
+                    <button class="linkedin-btn" id="remind-me">
+                        <i class="far fa-bell btn-icon"></i>
+                        stay updated
+                    </button>
+                    
+                    <div class="timeline">
+                        <p>Last profile update: <span id="current-date"></span></p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <p>© <span id="current-year"></span> Your Name. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Set current date and year
+        document.getElementById('current-date').textContent = new Date().toLocaleDateString('en-US', { 
+            year: 'numeric', 
+            month: 'long', 
+            day: 'numeric' 
+        });
+        
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Button interaction
+        document.getElementById('remind-me').addEventListener('click', function() {
+            alert("Thanks for your interest! You'll be notified when my projects are added.");
+        });
+    </script>
+</body>
+</html>
