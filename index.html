@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of A S Praveen Kumar, BCA graduate proficient in web development and Python programming">
+    <title>A S Praveen Kumar</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    
+</head>
+<body>
+    <!-- Floating Action Button -->
+    <div class="fab">
+        <button id="contact-fab" class="fab-btn" aria-label="Quick Contact">
+            <i class="fas fa-paper-plane"></i>
+        </button>
+        <button id="scroll-top" class="fab-btn" aria-label="Scroll to Top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </div>
+
+    <!-- Header with Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">A S Praveen</a>
+                
+                <div class="nav-links">
+                    <a href="#home" class="nav-link active">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+                
+                <button class="hamburger" aria-label="Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Hi, I'm <span> A S Praveen Kumar</span></h1>
+                    <div class="typewriter">
+                        <h2 class="hero-subtitle">BCA Graduate | Web Developer | Learner</h2>
+                    </div>
+                    <p class="hero-description">I design and build web apps that are fast, modern, and accessible.</p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="assets/resume.pdf" download class="btn btn-secondary">
+                            <i class="fas fa-download"></i> Download Resume
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="assets/praveen3.jpg" alt="Praveen profile picture" class="profile-img">
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="assets/profile.jpg" alt="About [Your Name]" class="about-img">
+                </div>
+                <div class="about-text">
+                    <p>I'm a Bachelor of Computer Applications (BCA) graduate with a strong foundation in full-stack web development and a passion for crafting beautiful, functional websites and applications.</p>
+                    
+                    <div class="education">
+                        <h3>Education</h3>
+                        <div class="education-item">
+                            <h4>Bachelor of Computer Applications (BCA)</h4>
+                            <p class="institution">Veerashaiva Degree College Bellary, 2025</p>
+                        </div>
+                    </div>
+                    
+                    <!-- <div class="experience">
+                        <h3>Experience</h3>
+                        <div class="experience-item">
+                            <h4>[Your Job Title]</h4>
+                            <p class="company">[Company Name] | [Year] - [Year]</p>
+                            <p class="description">[Brief description of your role and responsibilities]</p>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/project1.png" alt="Project 1">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Interactive Map</h3>
+                        <p class="project-description">Developed an interactive web-based map application using JavaScript and Leaflet.js, allowing users to explore and interact with real-time geographic data.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Leaflet.js</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" aria-label="View code on GitHub">
+                                <i class="fab fa-github"></i> 
+                            </a>
+                            <a href="int.html" class="project-link" aria-label="View code on GitHub">
+                                Get Details 
+                            </a>
+                            <a href="https://praveen08022004.github.io/interactive-map/" class="project-link" aria-label="View live demo">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/main1.png" alt="Project 2">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Placify</h3>
+                        <p class="project-description">
+                       Placify is a web-based placement management system developed using PHP and MySQL.
+                        It streamlines campus recruitment by connecting students, recruiters, and administrators through role-based dashboards.
+                         The platform supports job postings, resume management.
+                        </p>
+                        <div class="project-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>MySQL 5.7+</span>
+                            <span>PHP 8+</span>
+                            <span>Bootstrap 5</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" aria-label="View code on GitHub">
+                                <i class="fab fa-github"></i> 
+                            </a>
+                            <a href="plac.html" class="project-link" aria-label="View code on GitHub">
+                                Get Details 
+                            </a>
+                            <a href="#" class="project-link" aria-label="View live demo">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/main2.jpg" alt="Project 3">
+                    </div>
+                    <div class="project-content">
+                     <h3 class="project-title">DeptSync </h3>
+<p class="project-description">
+    A QR code-based academic attendance and workflow management platform developed using Flask and MySQL. 
+    DeptSync automates classroom attendance with real-time QR code scanning, supports assignment submissions, leave applications, 
+    and academic announcements — all through role-based dashboards for students, staff, HODs, and the Principal.
+</p>
+<div class="project-tech">
+    <span>Python (Flask)</span>
+    <span>MySQL</span>
+    <span>HTML5</span>
+    <span>CSS3</span>
+    <span>JavaScript</span>
+</div>
+
+                        <div class="project-links">
+                            <a href="#" class="project-link" aria-label="View code on GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="dept.html" class="project-link" aria-label="View code on GitHub">
+                                Get Details 
+                            </a>
+                            <a href="#" class="project-link" aria-label="View live demo">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-container">
+                <div class="skills-category">
+                    <h3>Frontend</h3>
+                    <div class="skill">
+                        <span class="skill-name">HTML5</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 95%"></div>
+                            <span class="skill-percent">95%</span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span class="skill-name">CSS3</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 90%"></div>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span class="skill-name">JavaScript</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 85%"></div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span class="skill-name">React</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 25%"></div>
+                            <span class="skill-percent">25%</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div class="skills-category">
+                    <h3>Backend</h3>
+                    <div class="skill">
+                        <span class="skill-name">Python</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 75%"></div>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span class="skill-name">PHP</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 70%"></div>
+                            <span class="skill-percent">70%</span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span class="skill-name">Flask</span>
+                        <div class="skill-bar">     
+                            <div class="skill-level" style="width: 50%"></div>
+                            <span class="skill-percent">60%</span>
+                        </div>
+                    </div>
+
+                    <div class="skills-category">
+                        <h3>Tools & Others</h3>
+                        <div class="skill">
+                        <span class="skill-name">Git</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 85%"></div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span class="skill-name">XAMPP</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 75%"></div>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span class="skill-name">MySQL Workbench</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 75%"></div>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span class="skill-name">VS Code</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 75%"></div>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let’s connect and talk code!</h3>
+                    <p>I'm a BCA graduate passionate about software development.
+                         Feel free to reach out if you're curious about my work, want to discuss tech, or just connect!</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>a.s.praveen2004@gmail.com<</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>9515618291</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Bengaluru</span>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/a-s-praveen-kumar" class="social-link" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href=" https://github.com/praveen08022004" class="social-link" aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    
+                        <a href="https://www.instagram.com/praveen.gowd_08?igsh=MXBxOTB0MnpvcmxpZA==" class="social-link" aria-label="Instagram">
+                            <i  class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" required>
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">A S Praveen Kumar</a>
+                    <p>Turning ideas into interactive web experiences</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Quick Links</h4>
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> A S Praveen. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    // Animate skill bars when section comes into view
+    const skillsSection = document.querySelector('.skills');
+    const skillLevels = document.querySelectorAll('.skill-level');
+    
+    // Store original widths
+    skillLevels.forEach(level => {
+        const width = level.style.width;
+        level.style.setProperty('--target-width', width);
+        level.style.width = '0';
+    });
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const skillLevels = entry.target.querySelectorAll('.skill-level');
+                skillLevels.forEach((level, index) => {
+                    setTimeout(() => {
+                        level.style.width = level.style.getPropertyValue('--target-width');
+                    }, index * 150);
+                });
+            }
+        });
+    }, { threshold: 0.1 });
+    
+    observer.observe(skillsSection);
+});     
+
+
+<!-- EmailJS SDK -->
+
+
+
+  // Initialize EmailJS with your Public Key
+  (function () {
+    emailjs.init("UeMqtIk_qosK2Bopf"); // ✅ Your Public Key
+  })();
+
+  // Select your form
+  const contactForm = document.querySelector('.contact-form');
+
+  // Form submission handler
+  if (contactForm) {
+    contactForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      emailjs.sendForm("service_jhalme6", "template_xsh0zy8", this)
+        .then(function () {
+          alert("✅ Message sent successfully!");
+          contactForm.reset();
+        }, function (error) {
+          console.error("❌ Failed to send email:", error);
+          alert("Something went wrong. Please try again.");
+        });
+    });
+  }
+
+
+
+  // Check if screen width is desktop size (992px or wider)
+if (window.innerWidth >= 992) {
+    alert("Please access this site on a mobile device for the best experience.\nDesktop version is coming soon!");
+}
+
+    </script>
+
+    
+</body>
+</html>
